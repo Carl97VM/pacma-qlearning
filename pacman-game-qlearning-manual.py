@@ -52,6 +52,7 @@ def train_q_learning(board, start, goal, episodes=300, max_steps=100):
                 new_state = state
             elif new_state == goal:
                 reward = 100
+            # FORMULA DE Q-LEARNING
             Q[state[1], state[0], action_idx] += ALPHA * (
                 reward + GAMMA * np.max(Q[new_state[1], new_state[0]]) - Q[state[1], state[0], action_idx]
             )

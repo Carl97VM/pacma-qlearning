@@ -2,13 +2,25 @@
 
 python pacman-game-qlearning.py
 
+### 1. Crear el entorno virtual
+Asegúrate de estar en la raíz del proyecto y ejecuta el siguiente comando:
+```bash
+# Con la consila de GitBash
+# Crear el entorno virtual
+$ python -m venv venv
+
+# Activar el entorno virtual
+$ source venv/Scripts/activate
+```
+
 ## Instalación de dependencias
-
-python -m pip install -r requirements.txt
-
+```bash
+$ python -m pip install -r requirements.txt
+```
 ## Ejecución del juego con botones
-
-python pacman-game-qlearning-manual.py
+```bash
+$ python pacman-game-qlearning-manual.py
+```
 
 ## Detalles Tecnicos
 
